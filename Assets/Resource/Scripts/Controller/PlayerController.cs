@@ -17,6 +17,11 @@ public class PlayerController : TankController
             Input.mousePosition.x - Screen.width / 2,
             Input.mousePosition.y - Screen.height / 2);
         RotateGun(gundirection);
+
+        if (Input.GetMouseButton(0))
+        {
+            Shoot();
+        }
     }
     public void MoveUp()
     {
